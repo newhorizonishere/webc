@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         CoroutineScope(Dispatchers.IO + job).launch {
             val WebSource = async {
-                GetWebSource("http://prod.danawa.com/info/?pcode=16291739&cate=12315778") }
+                GetWebSource("https://www.ulsan.go.kr/u/rep/main.ulsan") }
 
             withContext(Dispatchers.Main) {
                 var tv=findViewById(R.id.textView) as TextView
